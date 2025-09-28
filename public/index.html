@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bestie • Chaos³</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+    <h1>Bestie • Chaos³</h1>
+    <div class="face" id="face">
+      <svg viewBox="0 0 200 200" class="avatar">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="40%" r="70%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#e8e8ff" stop-opacity="1"/>
+          </radialGradient>
+        </defs>
+        <circle cx="100" cy="100" r="80" fill="url(#glow)" />
+        <circle id="eyeL" cx="70" cy="95" r="10" class="eye"/>
+        <circle id="eyeR" cx="130" cy="95" r="10" class="eye"/>
+        <path id="mouth" d="M70,135 Q100,155 130,135" class="mouth"/>
+        <ellipse cx="55" cy="120" rx="10" ry="6" class="blush"/>
+        <ellipse cx="145" cy="120" rx="10" ry="6" class="blush"/>
+      </svg>
+      <div class="status" id="status">ready</div>
+    </div>
+
+    <textarea id="text" rows="4" placeholder="Type what you want me to say…"></textarea>
+
+    <div class="buttons">
+      <button id="speakBtn">🔊 Speak</button>
+      <button id="calmBtn">🙂 Calm</button>
+      <button id="smileBtn">😊 Smile</button>
+      <button id="thinkBtn">🤔 Think</button>
+      <button id="sadBtn">😢 Sad</button>
+      <button id="alertBtn">⚡ Alert</button>
+    </div>
+
+    <p class="hint">
+      Works without keys using your browser voice.  
+      Add ElevenLabs secrets later for your custom voice.
+    </p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
